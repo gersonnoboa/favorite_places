@@ -48,6 +48,12 @@ class PlacesList extends StatelessWidget {
               color: theme.colorScheme.onBackground,
             ),
           ),
+          subtitle: Text(
+            places[index].location.address,
+            style: theme.textTheme.titleSmall!.copyWith(
+              color: theme.colorScheme.onBackground,
+            ),
+          ),
           onTap: () {
             _onPlacePressed(context, place);
           },
